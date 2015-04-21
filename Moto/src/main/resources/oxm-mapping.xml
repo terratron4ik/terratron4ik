@@ -1,0 +1,29 @@
+<mapping>
+
+    <class name="com.springapp.mvc.domain.Motos">
+        <field name="motos" type="com.springapp.mvc.domain.Moto" collection="arraylist">
+            <bind-xml name="moto"/>
+        </field>
+    </class>
+
+<class name="com.springapp.mvc.domain.Moto" identity="id">
+
+    <map-to xml="moto" />
+
+    <field name="id" type="int">
+        <bind-xml name="id" node="element" />
+    </field>
+
+    <field name="brand" type="string">
+        <bind-xml name="brand" node="element" />
+    </field>
+
+    <field name="model" type="string">
+        <bind-xml name="model" node="element" />
+    </field>
+
+    <field name="price" type="string">
+        <bind-xml name="price" node="element" />
+    </field>
+</class>
+</mapping>
